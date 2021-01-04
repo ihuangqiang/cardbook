@@ -1,0 +1,127 @@
+{
+    "title": "阳谋财金·卡神之路白皮书",
+    "description": "本电子书是阳谋财金网（www.yangmou.net）情理编纂，关于银行信用卡、储蓄卡、积分、福利等一些有关银行卡片的攻略白皮书。如果你能通读此书，即使是小白也可以助你快速成长为卡神达人！",
+    "author": "BigQiang",
+    "language": "zh-hans",
+    "root": ".",
+    "structure": {
+        "readme": "README.md"
+    },
+    "links": {
+        "sidebar": {
+            "阳谋财金网": "https://www.yangmou.net"
+        }
+    },
+	"styles": {
+    	"website": "styles/website.css", 
+		"ebook": "styles/ebook.css",
+		"pdf": "styles/pdf.css",
+		"mobi": "styles/mobi.css",
+		"epub": "styles/epub.css"
+    },
+    "pdf": {
+        "pageNumbers": true,
+        "fontFamily": "Arial",
+        "fontSize": 17,
+        "paperSize": "a3",
+        "margin": {
+            "right": 62,
+            "left": 62,
+            "top": 56,
+            "bottom": 56
+        }
+    },
+    "plugins": [
+	    "favicon", 
+		"insert-logo",
+		"code",
+        "donate",
+		"-lunr", "-search", "search-pro",
+		"tbfed-pagefooter",
+		"splitter",
+		"expandable-chapters-small",
+		"anchor-navigation-ex",
+		"advanced-emoji",
+		"lightbox",
+		"prism", "-highlight",
+		"copy-code-button"
+    ],
+
+    "pluginsConfig": {
+        "favicon": {
+            "shortcut": "images/favicon.ico",
+            "bookmark": "images/favicon.ico",
+            "appleTouch": "images/apple-touch-icon.png",
+            "appleTouchMore": {
+                "120x120": "images/apple-touch-icon-120x120.png",
+                "180x180": "images/apple-touch-icon-180x180.png"
+            }
+        },
+		"insert-logo": {
+            "url": "https://cdn.yangmou.net/wp-content/uploads/2020/10/1603169819-yangmounet_logo_175x50-3.png?x-oss-process=image/format,webp/quality,Q_100#",
+            "style": "background: none; max-height: 50px; min-height: 40px"
+        },
+        "theme-default": {
+            "showLevel": true
+        },
+        "fontSettings": {
+            "family": "serif",
+            "size": 3
+        },
+		"autotheme": {
+            "white": [9, 10, 11, 12, 13, 14, 15, 16, 17],
+            "sepia": [6, 7, 8, 18, 19],
+            "night": [20, 21, 22, 23, 0, 1, 2, 3, 4, 5]
+        },
+	    "sharing": {
+            "weibo": true,
+			"qzone": true,
+			"douban": true,
+			"facebook": false,
+			"twitter": false,
+			"all": [
+                "weibo","qzone","douban","facebook", "google", "twitter"
+            ]
+        },
+        "donate": {
+            "wechat": "https://sphard.com/images/wechatpay.jpg",
+            "alipay": "https://sphard.com/images/alipay.jpg",
+            "title": "",
+            "button": "打赏",
+            "alipayText": "支付宝打赏",
+            "wechatText": "微信打赏"
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright &copy <a href='https://www.yangmou.net' target='_blank'>阳谋财金网</a> 2020",
+            "modify_label": "最后更新时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+		"expandable-chapters-small":{},
+        "anchor-navigation-ex": {
+            "showLevel": true,
+            "associatedWithSummary": false,
+            "printLog": false,
+            "multipleH1": true,
+            "mode": "float",
+            "showGoTop": true,
+            "float": {
+                "floatIcon": "fa fa-navicon",
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            },
+            "pageTop": {
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            }
+        },
+		"prism": {
+          "css": [
+            "prismjs/themes/prism-okaidia.css"
+           ]
+        }
+    }
+}

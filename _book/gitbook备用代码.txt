@@ -1,0 +1,45 @@
+安装gitbook教程地址：https://sphard.com/ebooks/gitbook/install.html
+
+1、安装 Node.js，v10.22.1，下载地址：https://nodejs.org/dist/v10.22.1/node-v10.22.1-win-x64.zip
+     通过 npm 来安装 gitbook
+     命令：npm install gitbook-cli -g
+2、基本使用
+   1）安装插件：gitbook install
+   2）初始化书籍目录：gitbook init
+   3）编译和预览书籍：gitbook serve
+   4）访问路径：http://localhost:4000
+
+3、主题修改说明：
+     
+  1）修改默认主题样式文件：
+       路径：C:\Users\Qiang\.gitbook\versions\3.2.3\node_modules\gitbook-plugin-theme-default\_assets\website\style.css
+
+       ①、关于文字大小的设置，删除了.markdown-section 内的 font-size: inherit;
+       ②、.markdown-section strong 添加 font-size: 17px;
+       ③、body{ } 内修改font-size: 14px; 为 font-size: 16px;
+
+   
+ 
+  2）theme-comscore
+       comscore 可以为标题增加颜色，而缺省主题都是黑白色的。
+       -----------------------------------------------------
+       "theme-comscore"
+       -----------------------------------------------------
+
+4、插件使用说明：
+
+   1）theme-default
+   这个是缺省插件。这里将 showLevel 设为 true，这样就会显示标题前面的数字索引，默认是不显示的。
+    -----------------------------------------------------
+        "theme-default": {
+            "showLevel": true
+        },
+    -----------------------------------------------------
+  2）展示 csv 文件。
+    使用示例：
+    {% includeCsv  src="./assets/csv/test.csv", useHeader="true" %} {% endincludeCsv %}
+    -----------------------------------------------------
+    {
+        "plugins": ["include-csv"]
+    }
+    -----------------------------------------------------

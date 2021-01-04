@@ -1,0 +1,10 @@
+p{
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #222222;
+  line-height: 1.5;
+  font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+}
+li{
+   font-size: 16px;
+}
